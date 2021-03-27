@@ -5,7 +5,7 @@ import {
   StyleSheet,
   Text,
 } from 'react-native';
-import List from './android/screens/list/List';
+import List from './screens/list/List';
 import { COLORS, SPACING, TYPOGRAPHY } from './constants';
 
 const styles = StyleSheet.create({

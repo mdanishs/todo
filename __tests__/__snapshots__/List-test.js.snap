@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`marks the task as completed on check 1`] = `
+<RCTScrollView>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "padding": 10,
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        onChangeText={[Function]}
+        placeholder="What's next on your list"
+        rejectResponderTermination={true}
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 5,
+            "flexGrow": 1,
+            "marginRight": 5,
+            "paddingLeft": 15,
+          }
+        }
+        testID="list-text-input"
+        underlineColorAndroid="transparent"
+        value="My todo 1"
+      />
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#76777B",
+            "borderRadius": 50,
+            "display": "flex",
+            "height": 50,
+            "justifyContent": "center",
+            "opacity": 1,
+            "width": 50,
+          }
+        }
+        testID="list-add-button"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "fontSize": 17,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          +
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FAF8EB",
+          "borderRadius": 5,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "margin": 10,
+          "marginBottom": 0,
+          "padding": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#54565B",
+            },
+          ]
+        }
+        testID="list-item-text"
+      >
+        My todo 1
+      </Text>
+      <View
+        style={
+          Object {
+            "alignContent": "center",
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "opacity": 1,
+            }
+          }
+          testID="list-item-checkbox"
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#ffc484",
+                "borderColor": "#ffc484",
+                "borderRadius": 12.5,
+                "borderWidth": 1,
+                "height": 25,
+                "justifyContent": "center",
+                "transform": Array [
+                  Object {
+                    "scale": 0.7,
+                  },
+                ],
+                "width": 25,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "testUri": "../../react-native-bouncy-checkbox/build/dist/check.png",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 10,
+                    "width": 10,
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Object {
+                "marginLeft": 16,
+              }
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#757575",
+                    "fontSize": 16,
+                    "textDecorationLine": "line-through",
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+          testID="list-item-delete-button"
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 17,
+                "fontWeight": "bold",
+                "marginTop": -2,
+              }
+            }
+          >
+            x
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

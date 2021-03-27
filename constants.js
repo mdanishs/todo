@@ -28,3 +28,11 @@ export const TYPOGRAPHY = {
     fontWeight: 'bold',
   }
 }
+
+export const TEST_IDS = {
+  LIST_TEXT_INPUT: 'list-text-input',
+  LIST_ADD_BUTTON: 'list-add-button',
+  LIST_ITEM_TEXT: 'list-item-text',
+  LIST_ITEM_CHECKBOX: 'list-item-checkbox',
+  LIST_ITEM_DELETE_BUTTON: 'list-item-delete-button',
+}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Text, TextInput, View, StyleSheet, TouchableOpacity } from 'react-native'
-import { COLORS, SPACING, TYPOGRAPHY } from '../../../../constants';
+import { COLORS, SPACING, TEST_IDS, TYPOGRAPHY } from '../../../constants';
 
 const styles = StyleSheet.create({
   controlContainer: {
@@ -46,8 +46,8 @@ const TextControl = ({ title, placeholder, clearOnSubmit, onSubmit }) => {
 
   return (
     <View style={styles.controlContainer}>
-      <TextInput style={styles.input} value={text} placeholder={placeholder} onChangeText={handleTextChanged} />
-      <TouchableOpacity style={styles.addButton} onPress={handleOnPress} >
+      <TextInput testID={TEST_IDS.LIST_TEXT_INPUT} style={styles.input} value={text} placeholder={placeholder} onChangeText={handleTextChanged} />
+      <TouchableOpacity style={styles.addButton} onPress={handleOnPress} testID={TEST_IDS.LIST_ADD_BUTTON}>
         <Text style={styles.buttonText}>+</Text>
       </TouchableOpacity>
     </View>

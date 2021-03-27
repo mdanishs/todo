@@ -6,7 +6,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 import Checkbox from 'react-native-bouncy-checkbox';
-import { COLORS, SPACING, TYPOGRAPHY } from '../../../../constants';
+import { COLORS, SPACING, TEST_IDS, TYPOGRAPHY } from '../../../constants';
 
 const styles = StyleSheet.create({
   item: {
@@ -54,10 +54,12 @@ const ListItem = ({
 
   return (
     <View style={styles.item}>
-      <Text style={[styles.text]}>{text}</Text>
+      <Text style={[styles.text]} testID={TEST_IDS.LIST_ITEM_TEXT}>{text}</Text>
       <View style={styles.actions}>
-        <Checkbox isChecked={checked} onPress={handleStateChanged} />
-        <TouchableOpacity onPress={handleDelete}><Text style={styles.delete}>x</Text></TouchableOpacity>
+        <Checkbox isChecked={checked} onPress={handleStateChanged} testID={TEST_IDS.LIST_ITEM_CHECKBOX} />
+        <TouchableOpacity onPress={handleDelete} testID={TEST_IDS.LIST_ITEM_DELETE_BUTTON}>
+          <Text style={styles.delete}>x</Text>
+        </TouchableOpacity>
       </View>
     </View>
   )
