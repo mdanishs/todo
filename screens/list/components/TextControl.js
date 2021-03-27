@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   }
 })
 
-const TextControl = ({ title, placeholder, clearOnSubmit, onSubmit }) => {
+const TextControl = ({ placeholder, clearOnSubmit, onSubmit }) => {
   const [text, setText] = useState();
 
   const handleOnPress = () => {

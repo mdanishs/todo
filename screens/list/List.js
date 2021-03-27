@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { ScrollView, StyleSheet } from 'react-native';
+import I18n from 'react-native-i18n';
 import ListItem from './components/ListItem';
 import TextControl from './components/TextControl';
 import { createTodo } from '../../utils'
@@ -39,8 +40,8 @@ const List = () => {
   return (
     <ScrollView>
       <TextControl
-        title="Add"
-        placeholder="What's next on your list"
+        clearOnSubmit
+        placeholder={I18n.t('LIST_TEXT_PLACEHOLDER_INPUT')}
         onSubmit={handleTaskAdd}
       />
       {renderTodos()}
